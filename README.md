@@ -1,15 +1,15 @@
-DOWNLOAD
+Download
 ========
 
 The entire MetaQA dataset can be downloaded from [here](https://goo.gl/f3AmcY).
 
-LICENSE
+License
 =======
 
 This data is released under the Creative Commons Public License. A copy is included with the data.
 
 
-INTRODUCTION
+Introduction
 ============
 
 This document explains the contents of the MetaQA dataset, which is introduced in the following paper:
@@ -36,7 +36,7 @@ MetaQA stands for MoviE Text Audio QA. It contains three main components:
 We organize datasets in the number of hops first, so folders named `1-hop`, `2-hop` and `3-hop` are in the root directory. In each of them, we have `vanilla`, `ntm` and `audio` folders for the components described above. The questions in each component are of the same order. For example, the 5th question in `vanilla/qa_train.txt` corresponds to the 5th question in `ntm/qa_train.txt` and the 5th question in `audio/qa_train.npz`.
 
 
-KNOWLEDGE BASE
+Knowledge base
 ==============
 
 All questions in MetaQA are generated from the movie knowledge base in MovieQA. We provide the knowledge base in `kb.txt` in the root directory. Each line is one knowledge triple, and the schema is `subject|relation|object`.
@@ -44,7 +44,7 @@ All questions in MetaQA are generated from the movie knowledge base in MovieQA. 
 For example, `Kismet|directed_by|William Dieterle` shows that the movie `Kismet` is directed by the director `William Dieterle`.
 
 
-TRAIN / DEV / TEST SPLIT
+Train / dev / test split
 ========================
 
 We provide train / dev / test split for 1-hop, 2-hop and 3-hop datasets. All components share the same split. The counts of questions are listed below:
@@ -56,7 +56,7 @@ We provide train / dev / test split for 1-hop, 2-hop and 3-hop datasets. All com
 | Test  |  9,947 |  14,872 |  14,274 |
 
 
-QUESTION TYPE FILES
+Question type files
 ===================
 
 In each hop folders, we provide question type files for train / dev / test data. These question type files are generally for the evaluation of QA systems by decomposing the performance into different question types. Question type files follow the same order of the text and audio questions.
@@ -64,7 +64,7 @@ In each hop folders, we provide question type files for train / dev / test data.
 For example, the 3rd line in `1-hop/qa_test_qtype.txt` identifies the question type of the 3rd question in `1-hop/vanilla/qa_test.txt`, `1-hop/ntm/qa_test.txt` and `1-hop/audio/qa_test.npz`.
 
 
-TEXT DATA
+Text data
 =========
 
 For text data in `txt` files, including Vanilla and NTM datasets, each line is a question and its corresponding answer(s). Question and answer(s) are separated by `\t` in the same line. Questions may have multiple answers. If so, answer entities are separated by `|`. Entities in questions are highlighted with a pair of square brackets in the text.
@@ -72,7 +72,7 @@ For text data in `txt` files, including Vanilla and NTM datasets, each line is a
 For example, in the question `[Joe Thomas] appears in which movies`, the topic entity `Joe Thomas` is highlighted.
 
 
-AUDIO DATA
+Audio data
 ==========
 
 For audio data, we provide original mp3 files, such as `1-hop/audio/audio_mp3.tar.gz`. Each question in the Vanilla 1-hop data has a mp3 file in this archive file, and the file name follows the line index (0-based) of vanilla questions. The answers can be found in the text data, as described before.
