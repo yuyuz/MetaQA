@@ -1,7 +1,7 @@
 Download
 ========
 
-The entire MetaQA dataset can be downloaded from [here](https://goo.gl/f3AmcY).
+The entire MetaQA dataset can be downloaded from [here](https://drive.google.com/drive/folders/0B-36Uca2AvwhTWVFSUZqRXVtbUE?resourcekey=0-kdv6ho5KcpEXdI2aUdLn_g&usp=sharing).
 
 License
 =======
